@@ -15,8 +15,9 @@ app.get('/competencias',peliculaControlador.competencia);
 
 //seteamos el puerto en el cual va a escuchar los pedidos la aplicación
 var puerto = '8080';
+var ip = '0.0.0.0'
 
-app.listen(puerto, function () {
+app.listen(puerto, ip,function () {
   console.log( "Escuchando en el puerto " + puerto );
 });
 
